@@ -8,7 +8,7 @@ if(isset($_GET['num']))
 	}
 	else
 	{
-		if($_GET['num']<1 || $_GET['num']>999999999999999)
+		if($_GET['num']<2 || $_GET['num']>999999999999999)
 		{
 			$a = 25;
 			$e = $a;
@@ -107,9 +107,9 @@ addData(jsonData);
 	<p><?php 
 			if(isset($_GET['num']))
 			{
-				if($_GET['num']<1 || $_GET['num']>999999999999999)
+				if($_GET['num']<2 || $_GET['num']>999999999999999)
 				{
-					echo 'Number must be greater than 0 and less than 999,999,999,999,999';
+					echo 'Number must be greater than 1 and less than 999,999,999,999,999';
 				} 
 			}
 		?>
